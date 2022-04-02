@@ -33,8 +33,11 @@ export class SignupComponent implements OnInit {
   onSubmit() {
     if (this.form.valid) {
       const { name, email,password } = this.form.getRawValue();
-      this.signupService.signup({name,email,password}).subscribe( data => {
-        console.log(data);
+      this.signupService.signup({name,email,password}).subscribe( {
+        complete: () => {
+          this.router.navigate(['/login']);
+        },
+        error: (err) => console.error(err)
       });
 
     } else {

@@ -10,7 +10,6 @@ export class SignupService {
   constructor(private http: HttpClient) { }
 
   signup(user:any): Observable<any> {
-    console.log(user)
     return this.http.post("http://localhost:3001/api/users", user);
   }
 }

@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
     SignupComponent,
     LoginComponent,
     NotFoundComponent,
-    TermsConditionsComponent
+    TermsConditionsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  login(user: Any): Observable<any> {
-    return this.http.post("http://localhost:3001/api/users/login", user);
+  login(data: any): Observable<any> {
+    return this.http.post("http://localhost:3001/api/users/login", data);
   }
 }
